@@ -1,0 +1,108 @@
+body {
+  background-image: url("../img/cat.jpg");
+  background-size: 100vw 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.bitcount-grid-double {
+  font-family: "Bitcount Grid Double", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0, "CRSV" 0.5, "ELSH" 0, "ELXP" 0;
+}
+
+@-webkit-keyframes colors {
+  0% {
+    color: red;
+    margin-top: 10px;
+  }
+  12.5% {
+    color: red;
+    margin-top: 30px;
+  }
+  25% {
+    color: blue;
+    margin-top: 50px;
+  }
+
+  37.5% {
+    color: blue;
+    margin-top: 70px;
+  }
+  50% {
+    color: purple;
+    margin-top: 90px;
+  }
+  62.5% {
+    color: green;
+    margin-top: 70px;
+  }
+  75% {
+    color: green;
+    margin-top: 50px;
+  }
+
+  87.5% {
+    color: yellow;
+    margin-top: 30px;
+  }
+
+  100% {
+    color: yellow;
+    margin-top: 10px;
+  }
+}
+
+@keyframes colors {
+  0% {
+    color: red;
+    margin-top: 10px;
+  }
+  12.5% {
+    color: red;
+    margin-top: 30px;
+  }
+  25% {
+    color: blue;
+    margin-top: 50px;
+  }
+
+  37.5% {
+    color: blue;
+    margin-top: 70px;
+  }
+  50% {
+    color: purple;
+    margin-top: 90px;
+  }
+  62.5% {
+    color: green;
+    margin-top: 70px;
+  }
+  75% {
+    color: green;
+    margin-top: 50px;
+  }
+
+  87.5% {
+    color: yellow;
+    margin-top: 30px;
+  }
+
+  100% {
+    color: yellow;
+    margin-top: 10px;
+  }
+}
+
+.color-change {
+  height: 100px;
+  animation-name: colors;
+  -webkit-animation-name: colors;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-duration: 10s;
+  -webkit-animation-duration: 10s;
+}
