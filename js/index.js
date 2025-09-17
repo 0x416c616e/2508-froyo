@@ -26,6 +26,19 @@ function countFrequencyOfSingleValue(fullArray, valueToCount) {
   return count;
 }
 
+//I did this after finishing it and looking at the requirements and then realizing I need to have something object-related instead of just a string
+//so I implemented this but didn't really use it
+function getObjAllValues(uniquesArray, fullArray) {
+  freqObj = {};
+  for (let i = 0; i < uniquesArray.length; i++) {
+    freqObj[uniquesArray[i]] = countFrequencyOfSingleValue(
+      fullArray,
+      uniquesArray[i]
+    );
+  }
+  return freqObj;
+}
+
 function getFreqStringAllValues(uniquesArray, fullArray) {
   let message = "You ordered ";
   for (let i = 0; i < uniquesArray.length; i++) {
@@ -68,6 +81,9 @@ let message = getFreqStringAllValues(uniqueFlavors, flavorsArray);
 console.log(message);
 
 alert(message);
+
+console.log("aaaaaaaaaa");
+console.log(JSON.stringify(getObjAllValues(uniqueFlavors, flavorsArray)));
 
 //> Upon opening the website, a visitor receives a prompt to enter a list of comma-separated froyo flavors.
 //> They type `vanilla,vanilla,vanilla,strawberry,coffee,coffee`.
